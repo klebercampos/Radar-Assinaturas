@@ -33,12 +33,6 @@ jobs:
       - name: Build web
         run: flutter build web --release --base-href /Radar-Assinaturas/
 
-      # Enables Pages (build_type: workflow) when not yet configured.
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
