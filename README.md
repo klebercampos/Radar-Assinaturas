@@ -41,6 +41,6 @@ Cada push em `main` dispara o workflow que faz `flutter build web` e publica em 
 
 **URL:** https://klebercampos.github.io/Radar-Assinaturas/
 
-**Ativar Pages (uma vez):** em *Settings → Pages → Build and deployment → Source*, escolha **GitHub Actions**. Se o repositório for privado, Pages exige plano que inclua o recurso (ex.: GitHub Pro) ou tornar o repo público.
+**Ativar Pages (uma vez):** o workflow tenta habilitar Pages automaticamente (`enablement: true`). Se o deploy falhar com 404, em *Settings → Pages → Build and deployment → Source* escolha **GitHub Actions** e rode o workflow de novo (*Actions → Deploy Flutter Web to GitHub Pages → Run workflow*).
 
 Especificação completa: [`prompt_radar_assinaturas.md`](prompt_radar_assinaturas.md).
