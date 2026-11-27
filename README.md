@@ -35,4 +35,12 @@ lib/
 
 Persistência: `shared_preferences` + JSON (sem `build_runner` / freezed / hive).
 
+## Deploy (GitHub Pages)
+
+Cada push em `main` dispara o workflow que faz `flutter build web` e publica em GitHub Pages.
+
+**URL:** https://klebercampos.github.io/Radar-Assinaturas/
+
+**Ativar Pages (uma vez):** em *Settings → Pages → Build and deployment → Source*, escolha **GitHub Actions**. Se o repositório for privado, Pages exige plano que inclua o recurso (ex.: GitHub Pro) ou tornar o repo público.
+
 Especificação completa: [`prompt_radar_assinaturas.md`](prompt_radar_assinaturas.md).
